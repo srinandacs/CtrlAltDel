@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light gray background */
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #333; /* Dark background for header */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 3rem 0; /* Padding for the header */
+  }
+  
+  header img {
+    width: 100%; /* Image takes full width */
+    height: auto; /* Keep aspect ratio */
+    max-width: 1200px; /* Optional: Limit the max width of the image */
+  }
+  
+  /* Content Section Styles */
+  .content {
+    padding: 2rem;
+    background-color: #fff; /* White background for the content */
+    text-align: center;
+  }
+  
+  .content h2 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .content p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 1rem;
+    line-height: 1.8;
+  }
+  
+  /* Footer (optional) */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+  }
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Product Section Styles */
+  .products-section {
+    padding: 2rem;
+    background-color: #fff;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* Product Grid */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .product-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 1rem 0;
+  }
+  
+  .product-card .product-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .product-card .product-price {
+    font-size: 1.2rem;
+    color: #000;
+    margin-bottom: 1rem;
+  }
+  
+  .product-card .add-to-cart {
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .product-card .add-to-cart:hover {
+    background-color: #333;
+  }
+    

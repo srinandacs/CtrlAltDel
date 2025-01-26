@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECO BIZ</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+    // JavaScript to toggle content visibility
+    function toggleContent() {
+      const content = document.getElementById("eco-biz-content");
+      if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+      } else {
+        content.style.display = "none";
+      }
+    }
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">ECO BIZ</h1>
+      <a href="#home"></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#products">SERVICES</a></li>
+          <li><a href="javascript:void(0);" onclick="toggleContent()">ABOUT</a></li>
+
+          <li><a href="contact.html">CONTACT</a></li>
+
+       
+        </ul>
+        
+          
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Elevating Local Business to Rising Heights..</h1>
+      <button onclick="toggleContent()" class="btn btn-default">Why EcoBiz?</button>
+      
+    </div>
+  </section>
+
+  <!-- Why EcoBiz Content -->
+  <section id="eco-biz-content" style="display: none; padding: 2rem; background-color: #f9f9f9;">
+    <div class="container">
+      <h1>Why Choose EcoBiz?</h1>
+      <p>EcoBiz is committed to bringing sustainable and eco-friendly products to your doorstep. We strive to support local businesses, helping them grow while promoting environmentally conscious practices. Our aim is to make eco-friendly living accessible and affordable for everyone.</p>
+      <p>By shopping with EcoBiz, you are not only investing in quality products but also supporting small businesses and contributing to a healthier planet.</p>
+      <h2>Our Mission</h2>
+      <p>EcoBiz believes in empowering local communities through eco-friendly initiatives and products that promote sustainability. We collaborate with local artisans and eco-conscious brands to ensure our products are not only good for the environment but also support the livelihoods of small businesses.</p>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="products-section">
+    <div class="container">
+      <h2>OUR STORES</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="https://th-i.thgim.com/public/incoming/kr2iih/article68695191.ece/alternates/FREE_1200/DSC_6690.JPG" alt="KARIKKU">
+          <h3>KARIKKU</h3>
+          <a href="karikku.html">
+          <button>TAP TO OPEN</button>
+          </a>
+        </div>
+        <div class="product-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0vIYAC9kfnjDuWEIDalM7JL5myV2aTA7Dmg&s" alt="HOMELY MEALS">
+          <h3>HOMELY MEALS</h3>
+         <a href="homely.html">
+          <button>TAP TO OPEN</button>
+          </a>
+        </div>
+        <div class="product-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUmBZd2ev0e-ZsQ1hQ2stPnqCTrmzn9ysxEw&s" alt="GARLAND SHOP">
+          <h3>GARLAND SHOP</h3>
+          <a href="garland.html">
+          <button>TAP TO OPEN</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 EcoBiz. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

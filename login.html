@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000; /* Black background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #fff; /* White text for contrast against black background */
+        }
+
+        /* Container for the login form */
+        .login-container {
+            background-color: #333; /* Dark background for the form */
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Slightly darker shadow for contrast */
+            width: 100%;
+            max-width: 450px;
+            text-align: center;
+        }
+
+        /* Title */
+        .login-container h1 {
+            font-size: 28px;
+            color: #007bff; /* Blue text for the title */
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        /* Welcome Message */
+        .login-container h2 {
+            font-size: 22px;
+            color: #fff; /* White text for welcome message */
+            margin-bottom: 15px;
+            font-weight: normal;
+        }
+
+        /* Short description message */
+        .welcome-message {
+            font-size: 16px;
+            color: #ccc; /* Lighter grey for the description */
+            margin-bottom: 30px;
+        }
+
+        /* Input field styles */
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            text-align: left;
+            display: block;
+            color: #fff; /* White text for labels */
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            outline: none;
+            transition: all 0.3s ease;
+            background-color: #222; /* Dark input fields */
+            color: #fff; /* White text in input fields */
+        }
+
+        .form-group input:focus {
+            border-color: #007bff; /* Blue border on focus */
+        }
+
+        /* Button styles */
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff; /* Blue button */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-btn:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        /* Forgot password link styles */
+        .forgot-password {
+            margin-top: 15px;
+        }
+
+        .forgot-password a {
+            font-size: 14px;
+            color: #007bff; /* Blue color for the link */
+            text-decoration: none;
+        }
+
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <h2>Welcome Back to ECOBIZ!</h2>
+        <p class="welcome-message">Please enter your username and password to access your account.</p>
+        <form id="loginForm" action="javascript:void(0);">
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+          </form>
+          
+        <div class="forgot-password">
+            <a href="/forgot-password">Forgot your password?</a>
+        </div>
+    </div>
+    <script>
+       document.getElementById('loginForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent form submission
+  
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
+  
+  if (username === 'user' && password === 'password123') {
+    // Redirect to the dashboard if credentials are correct
+    window.location.href = 'index.html';
+  } else {
+    alert('Invalid username or password');
+  }
+});
+
+      </script>
+</body>
+</html>
